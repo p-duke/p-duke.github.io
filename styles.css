@@ -3,11 +3,8 @@
 }*/
 
 body {
-
   max-width: 960px;
   margin: auto;
-
-
   background-image: url("images/mars.jpeg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -20,6 +17,7 @@ main {
   vertical-align: top;
   padding-left: 30px;
   padding-right: 30px;
+  background: linear-gradient(#F0F0F0,#A8A8A8);
 }
 
 article {
@@ -30,10 +28,10 @@ article {
   padding: 0 20px 0px 20px;
   margin-bottom: 30px;
 
-/*  display: block;*/
+  display: block;
+  vertical-align: top;
   border: 2px solid black;
-  border-radius: 25px;
-  background: linear-gradient(to bottom right,#F8F8F8,#888888);
+  border-radius: 15px;
 }
 
 img {
@@ -50,11 +48,10 @@ section {
   vertical-align: top;
   width: 80%;
   height: 50%;
-  margin: 25px 20px 0 0px;
+  margin: 25px 20px 10px 0;
   padding: 0 20px 0 20px;
   border: 2px solid black;
-  border-radius: 25px;
-  background: linear-gradient(to bottom right,#F8F8F8,#888888);
+  border-radius: 15px;
 }
 
 p {
@@ -79,17 +76,26 @@ div {
   margin-top: 50px;
   position: fixed;
   border: 1px solid black;
-  border-radius: 15px;
-  background: linear-gradient(to bottom right,#F8F8F8,#888888);
-
 }
 
 footer {
-  width: 100%;
+  width: 86%;
   display: block;
   vertical-align: top;
   margin: 20px 0 0 0;
-  border: 2px solid black;
-  border-radius: 25px;
-  background: linear-gradient(to bottom right,#F8F8F8,#888888);
+}
+
+footer > nav {
+  color: black;
+  text-align: center;
+}
+
+section#homepage-header {
+  background: white;
+  text-align: center;
+  font-family: "Times New Roman";
+}
+
+.signup-form {
+
 }
