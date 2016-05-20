@@ -1,6 +1,6 @@
-* {
+/** {
   outline: 1px solid red;
-}
+}*/
 
 body {
 
@@ -8,9 +8,9 @@ body {
   margin: auto;
 
 
-/*  background-image: url("images/");
-  background-size: 100%;
-  background-repeat: no-repeat;*/
+  background-image: url("images/mars.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -49,15 +49,18 @@ section {
   display: block;
   vertical-align: top;
   width: 80%;
-  height: 50%
-  margin: 25px 20px 0 20px;
+  height: 50%;
+  margin: 25px 20px 0 0px;
   padding: 0 20px 0 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+  background: linear-gradient(to bottom right,#F8F8F8,#888888);
 }
 
 p {
   font-family: "Helvetica", serif;
   font-size: 15px;
-  height: 200px;
+  height: auto;
   display: block;
   margin-top: 1em;
   margin-bottom:1em;
@@ -75,12 +78,18 @@ div {
   vertical-align: top;
   margin-top: 50px;
   position: fixed;
-
+  border: 1px solid black;
+  border-radius: 15px;
+  background: linear-gradient(to bottom right,#F8F8F8,#888888);
 
 }
 
 footer {
-  width: auto;
+  width: 100%;
   display: block;
-  vertical-align: text-bottom;
+  vertical-align: top;
+  margin: 20px 0 0 0;
+  border: 2px solid black;
+  border-radius: 25px;
+  background: linear-gradient(to bottom right,#F8F8F8,#888888);
 }
