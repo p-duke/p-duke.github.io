@@ -4,43 +4,39 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body background="images/mountains.jpeg">
-  <br>
-  <br>
-  <br>
-  <br>
-    <h3>Subscribe to Runners Digest</h3>
-    <form name="subscribe-form" action="https://httpbin.org/post" method="post">
-      <div>
-        <label>Full Name</label>
-        <input type="text" name="fullname" style="border:1px solid black">
-      </div>
+<body>
+  <h3>Subscribe to Runners Digest</h3>
+  <form name="subscribe-form" action="https://httpbin.org/post" method="post">
+    <div>
+      <label>Full Name</label>
+      <input type="text" name="fullname" style="border:1px solid black">
+    </div>
 
-      <div>
-        <label>Email</label>
-        <input type="email" name="date" style="border:1px solid black">
-      </div>
+    <div>
+      <label>Email</label>
+      <input type="email" name="date" style="border:1px solid black">
+    </div>
 
-      <div>
+    <div>
       <label>Running Terrain</label>
       <select name="Running Terrain">
         <option value="terrain">Trail</option>
         <option value="terrain">Road</option>
         <option value="terrain">Treadmill</option>
       </select>
-      </div>
+    </div>
 
-      <div>
-        <input type="checkbox" name="agree-to-terms" value="agree" style="border:1px solid black">
-          "I would like to receive updates from Runner's Digest"
-      </div>
+    <div>
+      <input type="checkbox" name="agree-to-terms" value="agree" style="border:1px solid black">
+      "I would like to receive updates from Runner's Digest"
+    </div>
 
-      <div>
-        <label>Message:</label>
-        <textarea cols="30" rows="5"></textarea>
-      </div>
+    <div>
+      <label>Message:</label>
+      <textarea cols="30" rows="5"></textarea>
+    </div>
 
-      <button type="submit">Submit this form</button>
-    </form>
+    <button type="submit">Submit this form</button>
+  </form>
 </body>
 </html>
