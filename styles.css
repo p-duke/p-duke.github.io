@@ -1,10 +1,4 @@
-/** {
-  outline: 1px solid red;
-}*/
-
-
 /*   MAIN PAGE */
-
 
 body {
   max-width: 960px;
@@ -62,7 +56,6 @@ p {
   margin-top: 1em;
   margin-bottom:1em;
   margin-left: 10px;
-
 }
 
 ol {
@@ -73,6 +66,21 @@ ol {
 figure {
   width: auto;
   margin: 0 10px 0 10px;
+}
+
+blockquote {
+  text-align: center;
+  font-family: cursive;
+  font-size: 1em;
+  margin:center;
+}
+
+cite {
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 1em;
+  padding-left: 10px;
 }
 
 div {
@@ -114,15 +122,11 @@ div#learn-more-box:hover {
   color:white;
 }
 
-section:hover {
+article:hover, section:hover {
   background-color: black;
   color: white;
 }
 
-article:hover{
-  background-color: black;
-  color: white;
-}
 
 /* Subscribe Page */
 
@@ -143,7 +147,7 @@ form {
   padding-top: 5px;
 }
 
-div.contact-form {
+.contact-form {
   margin: 30px;
   width: 400px;
   color: black;
@@ -169,34 +173,44 @@ div.contact-form {
   background-repeat: no-repeat;
 }
 
-blockquote {
-  position: absolute;
-  top: 100px;
-  left: 250px;
-  color: black;
-  margin: 10px;
-  width: 50%;
-  text-align: center;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 2em;
-  display: inline-block;
-  vertical-align: top;
-}
-
-cite {
-  display: block;
-  font-weight: bold;
-}
 
 a:hover {
   color:white;
   font-weight: bold;
 }
 
+a:visited {
+  color:red;
+}
 
 #contact-nav {
   display: inline-block;
   vertical-align: top;
 }
 
+/* Responsive Layout */
+@media only screen and (max-width: 900px){
+
+  div {
+    height: 60px;
+    background-color: black;
+    color: white;
+  }
+
+  div#learn-more-box {
+    position: absolute;
+    top:0px;
+    left: 170px;
+  }
+
+  main {
+    margin-top: 125px;
+  }
+
+  div > a {
+  text-align: center;
+  margin: 5px 10px 0px 20px;
+  float: left;
+  }
+
+}
