@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Grid, Navbar, Jumbotron, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+import { Grid, Navbar, Jumbotron, Button } from 'react-bootstrap';
 
 class App extends Component {
   render() {
@@ -11,8 +11,9 @@ class App extends Component {
           <Grid>
             <Navbar.Header>
               <Navbar.Brand>
-                <a href='/'>React App</a>
+                <a href="/">React App</a>
               </Navbar.Brand>
+              <Navbar.Toggle />
             </Navbar.Header>
           </Grid>
         </Navbar>
@@ -20,9 +21,12 @@ class App extends Component {
           <Grid>
             <h1>Welcome to React</h1>
             <p>
-              <Button bsStyle="success" bsSize="large"
-              href="#"
-              target="_blank"> View React Bootstrap Docs
+              <Button
+                bsStyle="success"
+                bsSize="large"
+                href="http://react-bootstrap.github.io/components.html"
+                target="_blank">
+                View React Bootstrap Docs
               </Button>
             </p>
           </Grid>
