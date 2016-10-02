@@ -3,6 +3,7 @@ body {
       line-height: 1.8;
       color: #ffffff;
       padding-top: 25px;
+      height: 100%;
     }
 
     p {font-size: 16px;}
@@ -33,21 +34,6 @@ body {
       padding-bottom: 70px;
     }
 
-    /*.bg-1 {
-      background-image: url('../images/iron-man.jpg');
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-      background-position: center center;
-      background-size: cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover;
-      text-align: center;
-      height: auto;
-      color: black;
-    }*/
-
 
     .bg-2 {
     background-color: #474e5d; /* Dark Blue */
@@ -65,21 +51,19 @@ body {
     }
 
 
-    .parallax {
-    /* The image used */
-    background-image: url('../images/iron-man.jpg');
-
-    /* Set a specific height */
-    min-height: 600px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    #hero {
+      margin: 0;
+      background-image: url('../images/iron-man.jpg');
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: -10;
     }
 
-    .jumbotron .overlay {
+    #hero-overlay {
       background-color: #22A39F;
       position: absolute;
       top: 0px;
@@ -88,16 +72,18 @@ body {
       right: 0px;
       opacity: 0.75;
       filter: alpha(opacity=75);
-      z-index: 1;
+      z-index: -5;
     }
 
-    .jumbotron .title {
+
+    /*.jumbotron .title {
     padding-bottom: 20px;
     position: absolute;
     border-bottom: 1px solid #FFFFFF;
     border-bottom-color: rgba(255,255,255,0.35);
     display: inline-block;
     z-index: 2;
+    min-height: 550px;
     }
 
     .jumbotron .subhead {
@@ -107,4 +93,4 @@ body {
     border-bottom-color: rgba(255,255,255,0.35);
     display: inline-block;
     z-index: 2;
-    }
+    }*/

@@ -37,21 +37,26 @@ class App extends Component {
             </Navbar.Collapse>
           </Grid>
         </Navbar>
-        {/* Header Section */}
 
-        <Jumbotron>
-          <Grid fluid className="parallax text-center">
+        {/* Header Section */}
+        <Jumbotron id="hero">
+          <div id="hero-overlay"></div>
+          <Grid fluid className="text-center">
           <div className="text-center">
-            <h1 className="margin title">Peter Duke</h1>
-            {/* <Image rounded responsive src={profilePic} className="center-block" alt="profile-pic" /> */}
-            <h2 className="margin subhead">Web Developer</h2>
+            <h1 className="margin">Peter Duke</h1>
+            <h2 className="margin">Web Developer</h2>
           </div>
           </Grid>
-          <div className="overlay"></div>
         </Jumbotron>
-        <Grid fluid bsClass='container' className="text-center">
-          <p>Here's something else</p>
-        </Grid>
+
+          <Grid fluid bsClass="container" className="bg-2">
+            <h1>Resume</h1>
+            {/* <Image rounded responsive src={profilePic} className="center-block" alt="profile-pic" /> */}
+          </Grid>
+
+          <Grid fluid bsClass="container" className="bg-4">
+            <h1>Portfolio</h1>
+          </Grid>
       </div>
     );
   }
