@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
-import './index.css';
+
 import profilePic from '../images/profile.png';
+import cabinPic from '../images/cabin.png';
+
 import {
   Grid,
   Navbar,
@@ -13,7 +15,8 @@ import {
   NavDropdown,
   MenuItem,
   Image,
-  Row
+  Row,
+  Carousel
 } from 'react-bootstrap';
 
 class App extends Component {
@@ -49,14 +52,37 @@ class App extends Component {
           </Grid>
         </Jumbotron>
 
-          <Grid fluid bsClass="container" className="bg-2">
-            <h1>Resume</h1>
-            {/* <Image rounded responsive src={profilePic} className="center-block" alt="profile-pic" /> */}
-          </Grid>
+        <div className="container-fluid">
+        <Carousel>
+          <Carousel.Item>
+            <img className="img-responsive center-block" width={500} height={400} alt="900x500" src={cabinPic}/>
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="img-responsive center-block" width={500} height={400} alt="900x500" src={cabinPic}/>
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="img-responsive center-block" width={500} height={400} alt="900x500" src={cabinPic}/>
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+        </div>
 
-          <Grid fluid bsClass="container" className="bg-4">
-            <h1>Portfolio</h1>
-          </Grid>
+        <Grid fluid bsClass="container" className="bg-2">
+          <h1>Resume</h1>
+            {/* <Image rounded responsive src={profilePic} className="center-block" alt="profile-pic" /> */}
+        </Grid>
+
       </div>
     );
   }
