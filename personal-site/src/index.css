@@ -1,7 +1,8 @@
 body {
       font: 20px "Montserrat", sans-serif;
       line-height: 1.8;
-      color: #f5f6f7;
+      color: #ffffff;
+      padding-top: 25px;
     }
 
     p {font-size: 16px;}
@@ -32,18 +33,20 @@ body {
       padding-bottom: 70px;
     }
 
-    .bg-1 {
-      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-                rgba(0,0,0,0) url('../images/iron-man.jpg') no-repeat center;
+    /*.bg-1 {
+      background-image: url('../images/iron-man.jpg');
       background-repeat: no-repeat;
       background-attachment: scroll;
       background-position: center center;
+      background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover;
       text-align: center;
-    }
+      height: auto;
+      color: black;
+    }*/
 
 
     .bg-2 {
@@ -59,4 +62,49 @@ body {
     .bg-4 {
       background-color: #2f2f2f;
       color: #ffffff;
+    }
+
+
+    .parallax {
+    /* The image used */
+    background-image: url('../images/iron-man.jpg');
+
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .jumbotron .overlay {
+      background-color: #22A39F;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      opacity: 0.75;
+      filter: alpha(opacity=75);
+      z-index: 1;
+    }
+
+    .jumbotron .title {
+    padding-bottom: 20px;
+    position: absolute;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+    z-index: 2;
+    }
+
+    .jumbotron .subhead {
+    padding-bottom: 20px;
+    position: absolute;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+    z-index: 2;
     }
