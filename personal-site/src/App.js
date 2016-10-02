@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
+
 import profilePic from '../images/profile.png';
 import cabinPic from '../images/cabin.png';
 
@@ -20,6 +21,9 @@ import {
 } from 'react-bootstrap';
 
 class App extends Component {
+
+
+
   render() {
     return (
       <div>
@@ -95,17 +99,17 @@ class App extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-4 portfolio-item">
+                    <div className="col-md-offset-3 portfolio-item">
                         <a href="#portfolioModal1" className="portfolio-link" data-toggle="modal">
                             <div className="caption">
                                 <div className="caption-content">
                                     <i className="fa fa-search-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img src={require('../images/cabin.png')} className="img-responsive" alt="" />
+                            <img src={require('../images/mentor_search.png')} className="img-responsive" alt="" />
                         </a>
                     </div>
-                    <div className="col-sm-4 portfolio-item">
+                    {/* <div className="col-sm-4 portfolio-item">
                         <a href="#portfolioModal2" className="portfolio-link" data-toggle="modal">
                             <div className="caption">
                                 <div className="caption-content">
@@ -154,7 +158,7 @@ class App extends Component {
                             </div>
                             <img src={require('../images/submarine.png')} className="img-responsive" alt="" />
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
