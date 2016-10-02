@@ -20,47 +20,43 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Navbar inverse fixedTop>
+      <Navbar inverse fixedTop className="navbar">
           <Grid>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <a href="#">Peter Duke</a>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-          <Nav pullRight>
-            <NavItem eventKey={1} href="#">Link</NavItem>
-            <NavItem eventKey={2} href="#">Link</NavItem>
-            <NavItem eventKey={2} href="#">Link</NavItem>
-          </Nav>
-          </Navbar.Collapse>
+            <Navbar.Header>
+              <Navbar.Brand>
+                <a href="#">Peter Duke</a>
+              </Navbar.Brand>
+              <Navbar.Toggle />
+            </Navbar.Header>
+            <Navbar.Collapse>
+            <Nav pullRight>
+              <NavItem eventKey={1} href="#">Link</NavItem>
+              <NavItem eventKey={2} href="#">Link</NavItem>
+              <NavItem eventKey={2} href="#">Link</NavItem>
+            </Nav>
+            </Navbar.Collapse>
           </Grid>
         </Navbar>
-        {/* <Jumbotron>
-          <Grid>
-            <h1>Welcome to React</h1>
-            <p>
-              <Button
-                bsStyle="success"
-                bsSize="large"
-                href="http://react-bootstrap.github.io/components.html"
-                target="_blank">
-                View React Bootstrap Docs
-              </Button>
-            </p>
-          </Grid>
-        </Jumbotron> */}
 
         {/* Header Section */}
-        <Grid fluid bsClass='container' className="container-fluid bg-1 text-center wrapper">
-            <h3 className="margin">Who Am I?</h3>
-            <Image rounded responsive src={profilePic} className="center-block" alt="profile-pic" />
-            <h3>I'm an adventurer</h3>
-        </Grid>
+        <Jumbotron id="hero">
+          <div id="hero-overlay"></div>
+          <Grid fluid className="text-center">
+          <div className="text-center">
+            <h1 className="margin">Peter Duke</h1>
+            <h2 className="margin">Web Developer</h2>
+          </div>
+          </Grid>
+        </Jumbotron>
 
+          <Grid fluid bsClass="container" className="bg-2">
+            <h1>Resume</h1>
+            {/* <Image rounded responsive src={profilePic} className="center-block" alt="profile-pic" /> */}
+          </Grid>
 
-
+          <Grid fluid bsClass="container" className="bg-4">
+            <h1>Portfolio</h1>
+          </Grid>
       </div>
     );
   }
