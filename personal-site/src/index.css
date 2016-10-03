@@ -68,9 +68,9 @@ body {
     color: #ffffff;
     }
 
-    .bg-3 {
-    background-color: #ffffff;
-    color: #555555;
+    .bg-about {
+    background-color: #fae596;
+    color: #173e43;
     }
 
     .bg-4 {
@@ -98,7 +98,7 @@ body {
       bottom: 0px;
       left: 0px;
       right: 0px;
-      opacity: 0.55;
+      opacity: 0.75;
       filter: alpha(opacity=75);
       z-index: -5;
     }
@@ -129,6 +129,7 @@ body {
       text-align: center;
       background: rgba(0,0,0,0.4);
     }
+
 
 
 
@@ -165,7 +166,7 @@ body {
   h5,
   h6 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 700;
   }
 
@@ -174,13 +175,24 @@ body {
     border: none;
     border-top: solid 5px;
     text-align: center;
-    max-width: 250px;
+    max-width: 400px;
     margin: 25px auto 30px;
     color: #FFFFFF;
   }
 
+  hr#about-header {
+    padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+    color: #173e43;
+  }
+
   hr.star-light,
-  hr.star-primary {
+  hr.star-primary,
+  hr.star-yellow {
     padding: 0;
     border: none;
     border-top: solid 5px;
@@ -189,8 +201,9 @@ body {
     margin: 25px auto 30px;
   }
   hr.star-light:after,
-  hr.star-primary:after {
-    content: "\f005";
+  hr.star-primary:after,
+  hr.star-yellow:after {
+    content: "\f0eb";
     font-family: FontAwesome;
     display: inline-block;
     position: relative;
@@ -201,17 +214,30 @@ body {
   hr.star-light {
     border-color: white;
   }
+
   hr.star-light:after {
     background-color: #18BC9C;
     color: white;
   }
+
   hr.star-primary {
     border-color: #2C3E50;
   }
+
   hr.star-primary:after {
     background-color: white;
     color: #2C3E50;
   }
+
+  hr.star-yellow {
+    border-color: #2C3E50;
+  }
+
+  hr.star-yellow:after {
+    background-color: #fae596;
+    color: #2C3E50;
+  }
+
   .img-centered {
     margin: 0 auto;
   }
