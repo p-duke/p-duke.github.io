@@ -4,6 +4,7 @@ import App from './App';
 import './index.css';
 global.jQuery = require('jquery');
 require('bootstrap');
+var Scrollspy = require('react-scrollspy').Scrollspy;
 
 
 ReactDOM.render(
