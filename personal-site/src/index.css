@@ -73,9 +73,9 @@ body {
     color: #173e43;
     }
 
-    .bg-4 {
-      background-color: #2f2f2f;
-      color: #ffffff;
+    .bg-experience {
+      background-color: #dddfd4;
+      color: #173e43;
     }
 
 
@@ -132,7 +132,6 @@ body {
 
 
 
-
     /*Freelance Code*/
 
 
@@ -170,6 +169,11 @@ body {
     font-weight: 700;
   }
 
+  ul.no-bullets {
+    list-style: none;
+    padding: 0;
+  }
+
   hr.thick-line {
     padding: 0;
     border: none;
@@ -178,6 +182,11 @@ body {
     max-width: 400px;
     margin: 25px auto 30px;
     color: #FFFFFF;
+  }
+
+  hr.thin-line-primary {
+    border-top: solid 2px;
+    color: #2C3E50;
   }
 
   hr#about-header {
@@ -192,7 +201,8 @@ body {
 
   hr.star-light,
   hr.star-primary,
-  hr.star-yellow {
+  hr.star-yellow,
+  hr.star-beige {
     padding: 0;
     border: none;
     border-top: solid 5px;
@@ -202,7 +212,8 @@ body {
   }
   hr.star-light:after,
   hr.star-primary:after,
-  hr.star-yellow:after {
+  hr.star-yellow:after,
+  hr.star-beige:after {
     content: "\f0eb";
     font-family: FontAwesome;
     display: inline-block;
@@ -238,8 +249,23 @@ body {
     color: #2C3E50;
   }
 
+  hr.star-beige {
+    border-color: #2C3E50;
+  }
+
+  hr.star-beige:after {
+    background-color: #dddfd4;
+    color: #2C3E50;
+  }
+
   .img-centered {
     margin: 0 auto;
+  }
+
+  .img-circle {
+    border-width: 3px;
+    border-style: solid;
+    color: #2C3E50;
   }
   header {
     text-align: center;
@@ -677,3 +703,28 @@ body {
     opacity: 0;
     display: none;
   }
+
+/* ATOM MODEL */
+
+#main { width:600px; margin:50px auto; }
+#atom { width:600px; height:600px; /*border:1px solid red;*/ -webkit-perspective: 1000; position:relative; }
+
+#nucleus { position:absolute; top:50%; left:50%; margin: -50px 0 0 -50px; width:100px; height:100px; border-radius:100px; -webkit-border-radius:100px; -moz-border-radius:100px; background: -webkit-gradient(radial, 35 30, 20, 50 50, 51, from(#A7D30C), color-stop(0.8, #019F62), to(rgba(1, 159, 98,.3)))}
+
+.orbit { position:absolute; top:0; left:0; width:600px; height:600px; border-radius:600px; -webkit-border-radius:600px; -moz-border-radius:600px; border:2px solid #ccc; -webkit-transform-style: preserve-3d; -webkit-transform: rotateX(80deg) rotateY(20deg);}
+
+#atom .orbit:nth-child(2) {-webkit-transform: rotateX(80deg) rotateY(70deg)}
+#atom .orbit:nth-child(3) {-webkit-transform: rotateX(80deg) rotateY(-20deg)}
+#atom .orbit:nth-child(4) {-webkit-transform: rotateX(80deg) rotateY(-50deg)}
+
+#atom .orbit:nth-child(2) .path, #atom .orbit:nth-child(2) .electron {-webkit-animation-delay: -1.0s}
+#atom .orbit:nth-child(3) .path, #atom .orbit:nth-child(3) .electron {-webkit-animation-delay: -1.5s}
+#atom .orbit:nth-child(4) .path, #atom .orbit:nth-child(4) .electron {-webkit-animation-delay: -0.5s}
+
+.path { width:600px; height:600px; position:relative; -webkit-transform-style: preserve-3d; -webkit-animation-name: pathRotate; -webkit-animation-duration: 2s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; }
+
+.electron { position: absolute; top:-5px; left:50%; margin-left:-5px; width:10px; height:10px; border-radius:10px; background:#ff0000; -webkit-animation-name: electronFix; -webkit-animation-duration: 2s; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear;  }
+
+@-webkit-keyframes pathRotate { from { -webkit-transform: rotateZ(0deg);} to { -webkit-transform: rotateZ(360deg); } }
+
+@-webkit-keyframes electronFix { from { -webkit-transform: rotateX(90deg) rotateY(0deg); } to { -webkit-transform: rotateX(90deg) rotateY(-360deg); } }

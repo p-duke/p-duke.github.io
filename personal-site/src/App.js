@@ -163,37 +163,110 @@ class App extends Component {
                     <div className="col-md-4">
                         <h3>About me</h3>
                         <p>A former marketer turned full stack developer after working in the tech industry for four years. During that time helped clients and companies reach new customers with their brand. Took the leap into web development after pursuing programming for the past two years and never growing tired of learning a new concept or language. Now looking to have a greater impact by building software that enriches people's quality of life.</p>
+                        <br/>
+                        <button type="button" className="btn btn-info btn-lg">
+                          <span className="glyphicon glyphicon-save-file" aria-hidden="true"></span> Download Resume
+                        </button>
                     </div>
-                    <div className="col-md-4">
-                        <Image src={require("../images/headshot.jpg")} responsive circle />
+                    <div className="col-md-4 text-center">
+                        <Image width={246} height={246} src={require("../images/headshot.jpg")} circle />
+                        {/* <img className="img-responsive img-circle" src={require("../images/headshot.jpg")} alt="My headshot"/> */}
                     </div>
                     <div className="col-md-4">
                         <h3>Details</h3>
                         <p>
                           <strong>Name:</strong>
                           <br/>
-                          Peter Duke
+                          <i className="glyphicon glyphicon-user" aria-hidden="true"></i> Peter Duke
+                          <br/>
+                          <br/>
+                          <strong>Born:</strong>
+                          <br/>
+                          <i className="glyphicon glyphicon-home" aria-hidden="true"></i> San Francisco, CA
                           <br/>
                           <br/>
                           <strong>Location:</strong>
                           <br/>
-                          Brooklyn, NY
+                          <i className="glyphicon glyphicon-map-marker" aria-hidden="true"></i> Brooklyn, NY
                           <br/>
                           <br/>
-                          <strong>Inspiration:</strong>
+                          <strong>Interests:</strong>
                           <br/>
-                          Albert Einstein, Michael Faraday, Frank Gehry, William Gibson, Richard Feynman, Bill Nye, Ray Kurzweil and the list goes on...
-                          <br/>
-                        </p>
-                        <div>
-                        <a href="#">
-                          <i class="fa-linkedin-square" aria-hidden="true"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fa-linkedin-square" aria-hidden="true"></i>
-                        </a>
+                          <ul className="no-bullets">
+                            <li><i className="fa fa-pencil-square-o"></i> Design</li>
 
-                        </div>
+                            <li><i className="glyphicon glyphicon-book" aria-hidden="true"></i> Reading</li>
+
+                            <li><i className="fa fa-coffee"></i> Coffee</li>
+
+                            <li><i className="glyphicon glyphicon-cutlery" aria-hidden="true"></i>  Cooking
+                            </li>
+
+                            <li><i className="glyphicon glyphicon-road" aria-hidden="true"></i> Adventures</li>
+                          </ul>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section className="bg-experience" id="Experience">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 text-center">
+                        <h2>Experience</h2>
+                        <hr className="star-beige" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h3><i className="fa fa-laptop"></i> Skills</h3>
+                        <hr className="thin-line-primary"/>
+                    </div>
+                </div>
+                <div className="row">
+                  <div className="col-xs-6 col-sm-3">
+                  <ul>
+                    <li>skill set col 1</li>
+                    <li>skill set col 1</li>
+                    <li>skill set col 1</li>
+                  </ul>
+                  </div>
+                  <div className="col-xs-6 col-sm-3">
+                  <ul>
+                    <li>skill set col 1 star</li>
+                    <li>skill set col 1 star</li>
+                    <li>skill set col 1 star</li>
+                  </ul>
+                  </div>
+                  <div className="clearfix visible-xs-block"></div>
+                  <div className="col-xs-6 col-sm-3">
+                  <ul>
+                    <li>skill set col 2</li>
+                    <li>skill set col 2</li>
+                    <li>skill set col 2</li>
+                  </ul>
+                  </div>
+                  <div className="col-xs-6 col-sm-3">
+                  <ul>
+                    <li>skill set col 2 star</li>
+                    <li>skill set col 2 star</li>
+                    <li>skill set col 2 star</li>
+                  </ul>
+                  </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h3><i className="fa fa-pencil"></i> Careers</h3>
+                        <hr className="thin-line-primary"/>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h3><i className="glyphicon glyphicon-education" aria-hidden="true"></i> Education</h3>
+                        <hr className="thin-line-primary"/>
                     </div>
                 </div>
             </div>
@@ -205,3 +278,34 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+
+
+
+{/* <div id="main">
+            <div id="atom">
+                <div class="orbit">
+                    <div class="path">
+                        <div class="electron"></div>
+                    </div>
+                </div>
+                <div class="orbit">
+                    <div class="path">
+                        <div class="electron"></div>
+                    </div>
+                </div>
+                <div class="orbit">
+                    <div class="path">
+                        <div class="electron"></div>
+                    </div>
+                </div>
+                <div class="orbit">
+                    <div class="path">
+                        <div class="electron"></div>
+                    </div>
+                </div>
+                <div id="nucleus"></div>
+            </div>
+        </div> */}
