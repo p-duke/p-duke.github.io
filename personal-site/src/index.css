@@ -1,4 +1,4 @@
-body {
+/*body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ h6 {
   font-weight: 700;
 }
 
-/*body {
+body {
       font: 20px "Montserrat", sans-serif;
       line-height: 1.8;
       color: #ffffff;
@@ -35,7 +35,7 @@ h6 {
       height: 100%;
     }
 
-    p {font-size: 16px;}*/
+    p {font-size: 16px;}
 
     .margin {margin-bottom: 45px;}
 
@@ -61,15 +61,15 @@ h6 {
     .container-fluid {
       padding-top: 70px;
       padding-bottom: 70px;
-    }
+    }*/
 
     .bg-2 {
-    background-color: #474e5d; /* Dark Blue */
+    background-color: #474e5d;
     color: #ffffff;
     }
 
     .bg-3 {
-    background-color: #ffffff; /* White */
+    background-color: #ffffff;
     color: #555555;
     }
 
@@ -82,7 +82,7 @@ h6 {
     #hero {
       margin: 0;
       background-image: url('../images/iron-man.jpg');
-      height: 100%;
+      height: 100vh;
       background-attachment: fixed;
       background-position: center center;
       background-repeat: no-repeat;
@@ -101,6 +101,18 @@ h6 {
       opacity: 0.55;
       filter: alpha(opacity=75);
       z-index: -5;
+    }
+
+    .vertical-center {
+      min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+      min-height: 100vh; /* These two lines are counted as one :-)       */
+
+      display: flex;
+      align-items: center;
+    }
+
+    #hero-text {
+      color: #FFF;
     }
 
     .carousel-caption .overlay
@@ -156,6 +168,17 @@ h6 {
     text-transform: uppercase;
     font-weight: 700;
   }
+
+  hr.thick-line {
+    padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+    color: #FFFFFF;
+  }
+
   hr.star-light,
   hr.star-primary {
     padding: 0;
@@ -367,7 +390,7 @@ h6 {
   }
   @media (min-width: 767px) {
     #portfolio .portfolio-item {
-      margin: 0 0 30px;
+      margin: 18px 0 30px;
     }
   }
   .floating-label-form-group {
