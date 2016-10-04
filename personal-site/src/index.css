@@ -130,6 +130,14 @@ body {
       background: rgba(0,0,0,0.4);
     }
 
+    .gold-star {
+      color: #ff8f00;
+    }
+
+    .grey-star {
+      color: #bdbdbd;
+    }
+
 
 
     /*Freelance Code*/
@@ -267,7 +275,7 @@ body {
     border-style: solid;
     color: white;
   }
-  
+
   header {
     text-align: center;
     background: #18BC9C;

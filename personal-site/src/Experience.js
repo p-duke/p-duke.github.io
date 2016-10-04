@@ -20,31 +20,109 @@ class Experience extends Component {
               <div className="row">
                 <div className="col-xs-6 col-sm-3">
                 <ul>
-                  <li>skill set col 1</li>
-                  <li>skill set col 1</li>
-                  <li>skill set col 1</li>
+                  <li>Ruby on Rails</li>
+                  <li>Javascript (AJAX, jQuery)</li>
+                  <li>React.js</li>
+                  <li>TDD (RSpec, Jasmine)</li>
+                  <li>HTML5/CSS3</li>
                 </ul>
                 </div>
                 <div className="col-xs-6 col-sm-3">
                 <ul>
-                  <li>skill set col 1 star</li>
-                  <li>skill set col 1 star</li>
-                  <li>skill set col 1 star</li>
+                {/* Ruby on Rails */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star grey-star no-bullets "></i>
+                  </li>
+                  {/* Javascript */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets grey-star"></i>
+                    <i className="fa fa-star grey-star no-bullets "></i>
+                  </li>
+                  {/* React.js */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets grey-star"></i>
+                    <i className="fa fa-star grey-star no-bullets "></i>
+                  </li>
+                  {/* TDD */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets grey-star"></i>
+                    <i className="fa fa-star grey-star no-bullets "></i>
+                  </li>
+                  {/* HTML5 */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star grey-star no-bullets "></i>
+                  </li>
                 </ul>
                 </div>
                 <div className="clearfix visible-xs-block"></div>
                 <div className="col-xs-6 col-sm-3">
                 <ul>
-                  <li>skill set col 2</li>
-                  <li>skill set col 2</li>
-                  <li>skill set col 2</li>
+                <li>Git / Github`</li>
+                <li>Heroku</li>
+                <li>PostgreSQL, SQLite3</li>
+                <li>Object Oriented Programming</li>
+                <li>Project Management</li>
                 </ul>
                 </div>
                 <div className="col-xs-6 col-sm-3">
                 <ul>
-                  <li>skill set col 2 star</li>
-                  <li>skill set col 2 star</li>
-                  <li>skill set col 2 star</li>
+                {/* Git */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star grey-star no-bullets "></i>
+                  </li>
+                  {/* Heroku */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets grey-star"></i>
+                    <i className="fa fa-star no-bullets grey-star"></i>
+                    <i className="fa fa-star grey-star no-bullets "></i>
+                  </li>
+                  {/* PostgreSQL */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets grey-star"></i>
+                    <i className="fa fa-star grey-star no-bullets "></i>
+                  </li>
+                  {/* OOP */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets grey-star"></i>
+                    <i className="fa fa-star grey-star no-bullets "></i>
+                  </li>
+                  {/* Project Management */}
+                  <li>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star no-bullets gold-star"></i>
+                    <i className="fa fa-star gold-star no-bullets "></i>
+                  </li>
                 </ul>
                 </div>
               </div>
