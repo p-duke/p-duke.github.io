@@ -61,12 +61,8 @@ class App extends Component {
         </Jumbotron>
 
         <Portfolio />
-
         <About />
-
-
         <Experience />
-
         <Footer />
 
         <div className="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
