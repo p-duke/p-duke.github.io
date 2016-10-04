@@ -263,10 +263,11 @@ body {
   }
 
   .img-circle {
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
-    color: #2C3E50;
+    color: white;
   }
+  
   header {
     text-align: center;
     background: #18BC9C;
