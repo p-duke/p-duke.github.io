@@ -5,6 +5,7 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Experience from './Experience';
 import Footer from './Footer';
+import Navigation from './Navigation';
 
 import {
   Grid,
@@ -27,24 +28,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Navbar inverse fixedTop className="navbar">
-          <Grid>
-            <Navbar.Header>
-              <Navbar.Brand>
-                <a href="#">Peter Duke</a>
-              </Navbar.Brand>
-              <Navbar.Toggle />
-            </Navbar.Header>
-            <Navbar.Collapse>
-            <Nav pullRight>
-              <NavItem href="#">Profile</NavItem>
-              <NavItem href="#">Experience</NavItem>
-              <NavItem href="#">Portfolio</NavItem>
-              <NavItem href="#">Contact</NavItem>
-            </Nav>
-            </Navbar.Collapse>
-          </Grid>
-        </Navbar>
+        <Navigation/>
 
         {/* Header Section */}
         <Jumbotron id="hero" className="vertical-center">
@@ -59,6 +43,7 @@ class App extends Component {
           </div>
           </Grid>
         </Jumbotron>
+
 
         <Portfolio />
         <About />
