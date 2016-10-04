@@ -6,6 +6,7 @@ import Portfolio from './Portfolio';
 import Experience from './Experience';
 import Footer from './Footer';
 import Navigation from './Navigation';
+import NavigationSpy from './NavigationSpy';
 
 import {
   Grid,
@@ -38,8 +39,11 @@ class App extends Component {
             <h1 className="text-uppercase margin">Peter Duke</h1>
             <hr />
             <h2 className="margin">Full Stack Developer </h2>
-            {/* <h3 className="margin">Designer by Night</h3>
-            <hr className="thick-line"/> */}
+            <a href="#about" className="btn btn-circle page-scroll">
+              <i className="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+          <div>
           </div>
           </Grid>
         </Jumbotron>
