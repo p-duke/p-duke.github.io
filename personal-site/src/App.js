@@ -68,37 +68,7 @@ class App extends Component {
 
 
         {/* Carousel Section */}
-        {/* <div className="container-fluid">
-          <Carousel>
-            <Carousel.Item>
-              <img className="img-responsive center-block" width={900} height={500} alt="900x500" src={require('../images/Homepage.png')}/>
-              <Carousel.Caption className="carousel-text">
-                <div className="overlay">
-                  <h3>Homepage</h3>
-                  <p>See what's trending including current top mentors.</p>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="img-responsive center-block" width={900} height={500} alt="900x500" src={require('../images/mentor_search.png')}/>
-              <Carousel.Caption className="carousel-text">
-                <div className="overlay">
-                  <h3>Mentor Search</h3>
-                  <p>Search for mentors that have skills you wish to learn.</p>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="img-responsive center-block" width={900} height={500} alt="900x500" src={require('../images/user-profile.png')}/>
-              <Carousel.Caption className="carousel-text">
-                <div className="overlay">
-                  <h3>Profile Page</h3>
-                  <p>Create and Edit your profile including skills, bio, and goals.</p>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
-        </div> */}
+
 
         {/* Portfolio Section */}
         <section id="portfolio">
@@ -122,7 +92,7 @@ class App extends Component {
                     </div>
                 </div> */}
                 <div className="row">
-                  <Media className="col-md-4">
+                  {/* <Media className="col-md-4">
                       <Media.Left align="middle">
                         <div className="portfolio-item">
                            <a href="#portfolioModal1" className="portfolio-link" data-toggle="modal">
@@ -135,8 +105,39 @@ class App extends Component {
                            </a>
                         </div>
                       </Media.Left>
-                  </Media>
-                    <Media className="col-md-8">
+                  </Media> */}
+                  <div className="container-fluid">
+                    <Carousel>
+                      <Carousel.Item>
+                        <img className="img-responsive center-block" width={900} height={500} alt="900x500" src={require('../images/Homepage.png')}/>
+                        <Carousel.Caption className="carousel-text">
+                          <div className="overlay">
+                            <h3>Homepage</h3>
+                            <p>See what's trending including current top mentors.</p>
+                          </div>
+                        </Carousel.Caption>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <img className="img-responsive center-block" width={900} height={500} alt="900x500" src={require('../images/mentor_search.png')}/>
+                        <Carousel.Caption className="carousel-text">
+                          <div className="overlay">
+                            <h3>Mentor Search</h3>
+                            <p>Search for mentors that have skills you wish to learn.</p>
+                          </div>
+                        </Carousel.Caption>
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <img className="img-responsive center-block" width={900} height={500} alt="900x500" src={require('../images/user-profile.png')}/>
+                        <Carousel.Caption className="carousel-text">
+                          <div className="overlay">
+                            <h3>Profile Page</h3>
+                            <p>Create and Edit your profile including skills, bio, and goals.</p>
+                          </div>
+                        </Carousel.Caption>
+                      </Carousel.Item>
+                    </Carousel>
+                  </div>
+                    <Media className="col-lg-12">
                       <Media.Body>
                         <Media.Heading>Devconnect</Media.Heading>
                         <p>Selected as team lead for Devconnect, a hub for Dev Bootcamp graduates to connect and flourish in its thriving community plus extending the culture of learning through mentoring. An alumni can contribute to DBC's 2000+ community by posting any relevant information to our extensive forums section. The top trending and most recent forum posts will appear in a tabbed content section on the homepage. If an alumni decides to become a "mentor" they can tutor students who are seeking specific skill sets that the mentor has and later be endorsed for those skills earning badges based on a number of endorsements. The top mentors will appear on the homepage celebrating their achievements in the community. The application was built with Ruby on Rails, Python, Flask, React.js, HTML5, and Bootstrap CSS.</p>
@@ -202,7 +203,7 @@ class App extends Component {
                             <li><i className="glyphicon glyphicon-cutlery" aria-hidden="true"></i>  Cooking
                             </li>
 
-                            <li><i className="glyphicon glyphicon-road" aria-hidden="true"></i> Adventures</li>
+                            <li><i className="glyphicon glyphicon-road" aria-hidden="true"></i>  Adventures</li>
                           </ul>
                         </p>
 
@@ -271,6 +272,60 @@ class App extends Component {
                 </div>
             </div>
         </section>
+
+        <footer className="text-center">
+        <div className="footer-above">
+            <div className="container">
+                <div className="row">
+                    <div className="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place
+                            <br/>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div className="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul className="list-inline">
+                            <li>
+                                <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" className="btn-social btn-outline"><i className="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="footer-below">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        Copyright &copy; Peter Duke 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div className="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a className="btn btn-primary" href="#page-top">
+            <i className="fa fa-chevron-up"></i>
+        </a>
+    </div>
 
       </div>
     );
