@@ -15,9 +15,6 @@ class Navigation extends Component {
                   <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                       Menu <i className="fa fa-bars"></i>
                   </button>
-                  {/* <a className="navbar-brand page-scroll" href="#page-top">
-                      <i className="fa fa-play-circle"></i>
-                  </a> */}
               </div>
 
               {/* <!-- Collect the nav links, forms, and other content for toggling --> */}

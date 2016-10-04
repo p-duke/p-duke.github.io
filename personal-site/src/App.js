@@ -39,15 +39,14 @@ class App extends Component {
             <h1 className="text-uppercase margin">Peter Duke</h1>
             <hr />
             <h2 className="margin">Full Stack Developer </h2>
-            <a href="#about" className="btn btn-circle page-scroll">
+            {/* <a href="#about" className="btn btn-circle page-scroll">
               <i className="fa fa-angle-double-down animated"></i>
-            </a>
+            </a> */}
           </div>
           <div>
           </div>
           </Grid>
         </Jumbotron>
-
 
         <Portfolio />
         <About />
@@ -66,34 +65,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-
-
-
-{/* <div id="main">
-            <div id="atom">
-                <div class="orbit">
-                    <div class="path">
-                        <div class="electron"></div>
-                    </div>
-                </div>
-                <div class="orbit">
-                    <div class="path">
-                        <div class="electron"></div>
-                    </div>
-                </div>
-                <div class="orbit">
-                    <div class="path">
-                        <div class="electron"></div>
-                    </div>
-                </div>
-                <div class="orbit">
-                    <div class="path">
-                        <div class="electron"></div>
-                    </div>
-                </div>
-                <div id="nucleus"></div>
-            </div>
-        </div> */}

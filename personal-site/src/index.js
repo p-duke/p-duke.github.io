@@ -7,7 +7,7 @@ require('bootstrap');
 require('jquery');
 var Scrollspy = require('react-scrollspy').Scrollspy;
 // import $ from "jquery";
-var $ = require("jquery");
+// var $ = require("jquery");
 
 
 ReactDOM.render(
